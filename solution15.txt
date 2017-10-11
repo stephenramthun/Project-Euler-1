@@ -1,0 +1,15 @@
+The solution to problem 15 is actually quite simple. Brute force can be quickly recognized as not viable. Luckily, however, this can be viewed as a simple nCr problem, pronounced n choose r. If we have a grid of size y we know that we have an object size of 2y, for there are two options on each grid, down or right. One for our sample, however, since we can only chose one. This would be a single y.
+
+To calculate nCr we must use the
+following equation:
+
+n!/(r!(n-r)!)
+
+We can then substitute in our
+variables:
+
+(2y)!/(y!(2y-y)!)
+
+Simplifying:
+
+(2y)!/(y!)^2
